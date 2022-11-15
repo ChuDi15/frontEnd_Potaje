@@ -1,0 +1,33 @@
+/* *{
+    border: 0px;
+    padding: 0px;
+    box-sizing: none;
+    margin: 0px;
+}
+div{
+    height:100vh;
+}
+body{
+    display:flex;
+
+    height:100vh;
+    
+}
+
+.Teams{
+    padding:20px;
+    width: 60%;
+    background-color: rgb(205, 204, 204);
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    }
+@media (max-width: 1350px){
+   
+    .Teams{
+        height:120%;
+    }
+  } */
