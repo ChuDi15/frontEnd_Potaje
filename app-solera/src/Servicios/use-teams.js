@@ -3,8 +3,9 @@ import axios from "axios";
 
 /**
  * 
- * Esta función devuelve la información de la base de datos
- * @returns @param {data,isLoading,hasError} from BBDD
+ * devuelve un objeto con los datos en formato json,
+ * el estado de carga o no de los mismos, e indica el tipo de error que pueda suceder
+ * @returns @param {data,isLoading,hasError} from BackEnd endpoint
  */
 export const useFetch = (url) => {
   const [state, setState] = useState({
