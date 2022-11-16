@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+/**
+ * 
+ * Esta función devuelve la información de la base de datos
+ * @returns @param {data,isLoading,hasError} from BBDD
+ */
 export const useFetch = (url) => {
   const [state, setState] = useState({
     data: null,
