@@ -2,6 +2,11 @@ import React from "react";
 import "./App.css";
 import Children from "./Children.js";
 import "bootstrap/dist/css/bootstrap.min.css";
+/**
+ *Pagina principal
+ *@param appName texto de cabecera
+ *@returns visual component
+ */
 
 function App() {
   const appName = "SOLERA TEAMS. BOOTCAMP 4";

@@ -2,7 +2,11 @@ import React from "react";
 
 import "./ActivitiesList.css";
 import Activity from "./Activity.js";
-
+/**
+ * Mapea las diferentes actividades
+ * @param {activities} props normal-props
+ * @returns visual component
+ */
 const ActivitiesList = (props) => {
   if (props.activities.length === 0) {
     return <h2 className="activities-list__fallback">Found no activities</h2>;

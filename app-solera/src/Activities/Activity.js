@@ -1,21 +1,21 @@
 import React from "react";
-import "./Activity.css"
+import "./Activity.css";
+/**
+ * Muestra los puntos y nombre de cada actividad
+ * @param {key,name,points} props normal-props
+ * @returns visual component
+ */
 
 const Activity = (props) => {
   return (
     <div className="d-flex row">
-      <div className="col-6">
-         {props.name} 
-      </div>
-      <div className="col-6 text-center">
-        Puntos: {props.points}
-      </div>
+      <div className="col-6">{props.name}</div>
+      <div className="col-6 text-center">Puntos: {props.points}</div>
     </div>
   );
 };
 
 export default Activity;
-
 
 // <div className="Activities d-flex bg-white flex-column w-75 ">
 // <div className="Activities-Header  row p-3">

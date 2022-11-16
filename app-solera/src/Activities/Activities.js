@@ -1,7 +1,12 @@
 import React from "react";
 import ActivitiesList from "./ActivitiesList.js";
 import "./Activities.css";
-
+/**
+ * Cuadrado grande en el que se vuelcan las diferentes tarjetas de actividades
+ * @param {team,totalPoints} props normal-props
+ * @param {onChangeTeam} props go-to-up
+ * @returns visual content
+ */
 const Activities = (props) => {
   return (
     <div className="Activities d-flex bg-white rounded flex-column w-75 ">
