@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useFetch } from "./Servicios/use-teams.js";
-import  childrenReturnValue  from "./Servicios/Helper.js";
+import childrenReturnValue from "./Servicios/Helper.js";
 
 
 
@@ -18,9 +18,9 @@ const Children = () => {
    *
    * @param {*} team
    * si teamSelected es true, se le dará un valor null
-   * si TeamSelected es false, se le dará el valor que reciba el método
+   * si TeamSelected es false, se le dará el valor que reciba el método.
    */
-  const teamSelectedHandler = ( team) => {
+  const teamSelectedHandler = (team) => {
     if (teamSelected) {
       setTeamSelected(null);
     } else {
