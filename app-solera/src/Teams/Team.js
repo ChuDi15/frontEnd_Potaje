@@ -12,11 +12,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
  * @returns visual-component
  */
 const Team = (props) => {
-  // Mas tarde exportar
-  let sumatotal = 0;
-  for (const activities in props.activities) {
-    sumatotal = sumatotal + activities.points;
-  }
   const changeTeamHandler = () => {
     props.onChangeTeam(props.id);
   };
