@@ -12,7 +12,7 @@ const Activities = (props) => {
     <div className="Activities d-flex bg-white rounded flex-column w-75 ">
       <div className="Activities-Header  row p-3">
         <h3 className="d-flex col-6">{props.team.name}</h3>
-        <h3 class="col-6 text-center">{"Puntos: " + props.totalPoints}</h3>
+        <h3 className="col-6 text-center">{"Puntos: " + props.totalPoints}</h3>
         <hr />
       </div>
       <ActivitiesList activities={props.team.activities} />
