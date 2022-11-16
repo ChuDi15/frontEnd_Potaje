@@ -30,3 +30,4 @@ export default Activity;
 // <ActivitiesList activities={props.team.activities}/>
 // <button onClick={props.onChangeTeam}>back</button>
 // </div>
+
