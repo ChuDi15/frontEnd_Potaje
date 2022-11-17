@@ -2,6 +2,15 @@ import React from "react";
 import Activities from "../Components/Activities/Activities";
 import TeamsList from "../Components/Teams/TeamsList";
 
+const activityNameExits = (activities, name) => {
+  for (let activity of activities) {
+    if (name === activity.name) {
+      return true;
+    }
+  }
+  return false;
+};
+
 const calculateActivityPoints = (points) => {
   return 5 + points * 5;
 };
@@ -21,7 +30,7 @@ const calculateTotalPoints = (team) => {
   return sum;
 };
 
-const getTeamSelectedObjectActivities = (team,  activityData) => {
+const getTeamSelectedObjectActivities = (team, activityData) => {
   team.activities.forEach((activityTeam, index) => {
     let newActivity = activityData.data.filter((activity) => {
       return activity.arrivePosition === index;
@@ -53,7 +62,8 @@ const childrenReturnValue = (
   teamSelected,
   teamData,
   activityData,
-  teamSelectedHandler
+  teamSelectedHandler,
+  setAddActivity
 ) => {
   if (teamSelected) {
     const teamObject = setTeamSelected(teamSelected, teamData, activityData);
@@ -65,8 +75,13 @@ const childrenReturnValue = (
       />
     );
   }
-  return <TeamsList onChangeTeam={teamSelectedHandler} teams={teamData.data} />;
+  return (
+    <TeamsList
+      onChangeTeam={teamSelectedHandler}
+      teams={teamData.data}
+      setAddActivity={setAddActivity}
+    />
+  );
 };
 
-export { calculateTotalPoints, childrenReturnValue, calculateActivityPoints };
-
+export { calculateTotalPoints, childrenReturnValue, calculateActivityPoints, activityNameExits  };
