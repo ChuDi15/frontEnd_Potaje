@@ -1,5 +1,6 @@
 import React from "react";
-import "./Activity.css";
+import "./Activities.css";
+import { calculateActivityPoints } from '../../Servicios/Helper.js'
 /**
  * Muestra los puntos y nombre de cada actividad
  * @param {key,name,points} props normal-props
@@ -10,7 +11,9 @@ const Activity = (props) => {
   return (
     <div className="d-flex row">
       <div className="col-6">{props.name}</div>
-      <div className="col-6 text-center">Puntos: {props.points}</div>
+      <div className="col-6 text-center">
+        Puntos: {calculateActivityPoints(props.points)}
+      </div>
     </div>
   );
 };

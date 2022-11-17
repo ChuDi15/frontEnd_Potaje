@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useFetch } from "./Servicios/use-teams.js";
-import childrenReturnValue from "./Servicios/Helper.js";
+import { childrenReturnValue } from "./Servicios/Helper.js";
 
 
 

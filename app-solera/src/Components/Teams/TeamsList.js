@@ -2,7 +2,7 @@ import React from "react";
 
 import "./TeamsList.css";
 import Team from "./Team.js";
-
+import { calculateTotalPoints } from "../../Servicios/Helper.js"
 /**
  * crea un cuadro con tantas cartas como equipos haya en la bbdd,
  * en caso de no haber ninguno, mostrará un mensaje concreto
@@ -24,7 +24,7 @@ const TeamsList = (props) => {
           id={team._id}
           key={team._id}
           name={team.name}
-          totalPoints={team.totalPoints}
+          totalPoints={calculateTotalPoints(team)}
           activities={team.activities}
         />
       ))}

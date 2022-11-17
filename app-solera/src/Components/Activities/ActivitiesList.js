@@ -11,11 +11,13 @@ const ActivitiesList = (props) => {
   if (props.activities.length === 0) {
     return <h2 className="activities-list__fallback">Found no activities</h2>;
   }
+
+  
   return (
     <ul className="activities-list row">
       {props.activities.map((activity) => (
         <Activity
-          key={activity.id}
+          key={activity._id}
           name={activity.name}
           points={activity.points}
         />
