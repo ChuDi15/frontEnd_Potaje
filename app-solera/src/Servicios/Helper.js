@@ -84,4 +84,4 @@ const childrenReturnValue = (
   );
 };
 
-export { calculateTotalPoints, childrenReturnValue, calculateActivityPoints, activityNameExits  };
+export { calculateTotalPoints, childrenReturnValue, calculateActivityPoints, activityNameExits };

@@ -26,15 +26,16 @@ const Children = () => {
       setTeamSelected(team);
     }
   };
-  if(addActivity){
+  if (addActivity) {
     show = (
+
       <AddActivity
         teams={teamData.data}
         activities={activityData.data}
         setAddActivity={setAddActivity}
       />
     );
-  }else{
+  } else {
     show = childrenReturnValue(
       teamSelected,
       teamData,

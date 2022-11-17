@@ -24,9 +24,9 @@ const AddActivityForm = (props) => {
 
   const setNameHandler = (event) => {
     console.log(event)
-    if(event.keyCode === 13 ){
+    if (event.keyCode === 13) {
       injectActivity(newActivity);
-    }else{
+    } else {
       setNewActivity({ ...newActivity, name: event.target.value });
     }
   };
@@ -47,8 +47,8 @@ const AddActivityForm = (props) => {
     }
   };
   return (
-    <div>
-      <AddActivityImput name="Name:" setNameHandler={setNameHandler} />
+    <div className="d-flex justify-content-center wrap align-content-center  flex-row  p-2">
+      <AddActivityImput name="Activity Name:" setNameHandler={setNameHandler} />
       <AddActivitySelect
         name="Winner"
         teams={props.teams}
@@ -57,7 +57,7 @@ const AddActivityForm = (props) => {
       <AddActivitySelect
         name="Second"
         teams={props.teams}
-        defaultValue = {props.teams[1]._id}
+        defaultValue={props.teams[1]._id}
         setSelect={setSecondHandler}
       />
       <AddActivitySubmit
