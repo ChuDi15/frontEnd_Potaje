@@ -2,6 +2,7 @@ import React from "react";
 
 import "./TeamsList.css";
 import Team from "./Team.js";
+import AddActivityButton from "../AddActivity/AddActivityButton";
 import { calculateTotalPoints } from "../../Servicios/Helper.js"
 /**
  * crea un cuadro con tantas cartas como equipos haya en la bbdd,
@@ -18,6 +19,7 @@ const TeamsList = (props) => {
 
   return (
     <div className="teams-list">
+      <AddActivityButton setAddActivity={props.setAddActivity} />
       {props.teams?.map((team) => (
         <Team
           onChangeTeam={props.onChangeTeam}
